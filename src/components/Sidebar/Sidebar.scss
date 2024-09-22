@@ -1,0 +1,51 @@
+.sidebar {
+  width: 15%;
+  background-color: #000;
+  color: white;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  .sidebar-logo {
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 32px;
+  }
+
+  .user-info {
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    p {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 32px;
+      color: white;
+    }
+  }
+  .nav-link {
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+
+    i {
+      font-size: 16px;
+    }
+
+    &:hover {
+      padding: 10px 10px;
+      border-radius: 40px 0px 0px 40px;
+      background-color: #f3f4ff;
+      box-shadow: 0px 20px 50px 0px #bf156c0d;
+      text-align: center;
+      margin-right: -18px;
+    }
+  }
+}

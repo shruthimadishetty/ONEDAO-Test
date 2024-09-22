@@ -1,0 +1,133 @@
+.otp-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+
+  .otp-container {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    border-radius: 20px;
+    box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      background: url('../../assets/register_image.png') no-repeat center center;
+      background-size: cover;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .otp-image-side {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+
+      @media (max-width: 768px) {
+        display: none; 
+      }
+
+      .otp-image {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .otp-form-side {
+      width: 50%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #fff;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 32px;
+        background: rgba(0, 0, 0, 0.5); 
+        color: #fff; 
+        height: 100vh;
+      }
+
+      h3 {
+        text-align: center;
+        font-size: 24px;
+        color: #252733;
+        margin-bottom: 16px;
+
+        @media (max-width: 768px) {
+          color: #fff; 
+        }
+      }
+
+      p {
+        text-align: center;
+        color: #9fa2b4;
+        margin-bottom: 32px;
+
+        @media (max-width: 768px) {
+          color: #fff;
+          font-size: 12px; 
+        }
+      }
+
+      .otp-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .otp-inputs {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 32px;
+          gap: 15px;
+          @media (max-width: 768px) {
+            gap: 7px;
+          }
+
+          .otp-input {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #d1d1d1;
+            border-radius: 8px;
+
+            &:focus {
+              outline: none;
+              border-color: #000;
+
+              @media (max-width: 768px) {
+                border-color: #fff;
+              }
+            }
+          }
+        }
+
+        .otp-submit-btn {
+          background-color: #000;
+          color: #fff;
+          padding: 10px 24px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: #333;
+          }
+
+          @media (max-width: 768px) {
+            background-color: #fff;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #f8f9fa;
+
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .d-flex {
+      display: flex;
+      align-items: center;
+
+      img {
+        border: 2px solid #ddd;
+        padding: 2px;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+}
